@@ -1,7 +1,8 @@
+import 'package:chat_box/sub_models/ios_store.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/foundation.dart';
-import 'MyChatBox.dart';
+import 'sub_models/MyChatBox.dart';
 import 'themes/theme.dart';
 
 void main() => runApp(MyApp());
@@ -15,7 +16,7 @@ class MyApp extends StatelessWidget {
       theme: defaultTargetPlatform == TargetPlatform.iOS
           ? kIOSTheme
           : kDefaultTheme,
-      home: MyChatScreen(title: 'Chat Box'),
+      home: StorePrime(title: 'Chat Box'),
     );
   }
 }
